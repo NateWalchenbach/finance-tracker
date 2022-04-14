@@ -1,0 +1,16 @@
+React
+
+GraphQL
+
+ChartsJS
+
+Javascript 
+
+Saas
+
+Mongoose
+
+MonogoDB
+
+Express
+
