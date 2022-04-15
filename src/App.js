@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
@@ -47,4 +47,7 @@ function App() {
     </div>
   );
 }
+
 export default App;
+
+// Going to be root component
