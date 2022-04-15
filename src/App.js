@@ -1,4 +1,4 @@
-import { react, useState } from "react";
+import { useState } from "react";
 
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
@@ -46,9 +46,5 @@ function App() {
       <Expenses items={expenses} />
     </div>
   );
-  function App() {
-    return <Test />;
-    <Profile />;
-  }
 }
 export default App;
