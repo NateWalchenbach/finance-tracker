@@ -31,6 +31,11 @@ const DUMMY_EXPENSES = [
   },
 ];
 
+const client = new ApolloClient({
+  uri: '/graphql',
+  cache: new InMemoryCache(),
+});
+
 function App() {
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
 
@@ -41,10 +46,23 @@ function App() {
   };
 
   return (
-    <div>
-      <NewExpense onAddExpense={addExpenseHandler} />
-      <Expenses items={expenses} />
-    </div>
+    <ApolloProvider client={client}>
+      <Router>
+        <div>
+          <Routes>
+            <Route 
+              path="/" 
+              element={ <Expenses items={expenses} />}
+            />
+              
+            <Route 
+              path="/expense/new" 
+              element={<NewExpense onAddExpense={addExpenseHandler} />}
+            />
+          </Routes>
+        </div>
+      </Router>
+    </ApolloProvider>
   );
 }
 
