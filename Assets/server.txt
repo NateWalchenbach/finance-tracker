@@ -1,0 +1,8 @@
+SERVER
+|
+MODELS - User.js, Expenses.js
+CONFIG-- connection.js
+SCHEMA - graphQL
+UTILS - authentication
+|
+SERVER LEVEL - package.json, server.js
