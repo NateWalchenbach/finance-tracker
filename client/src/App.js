@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
@@ -52,13 +53,13 @@ function App() {
           <Routes>
             <Route 
               path="/" 
-              element={ <Expenses items={expenses} />}
+              element={[<NewExpense onAddExpense={addExpenseHandler} />, <Expenses items={expenses} />] }
             />
               
-            <Route 
+            {/* <Route 
               path="/expense/new" 
-              element={<NewExpense onAddExpense={addExpenseHandler} />}
-            />
+              element={}
+            /> */}
           </Routes>
         </div>
       </Router>
