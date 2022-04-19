@@ -1,9 +1,8 @@
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  process.env.DATABASE.replace("<password>", process.env.DB_PASSWORD) ||
-    "mongodb://127.0.0.1:27017/portfolio",
-
+  process.env.DATABASE ||
+    "mongodb+srv://natewalchenbach:N1U0XMmQtTW7t3x0@cluster0.rcjod.mongodb.net/Cluster0?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
