@@ -48,5 +48,26 @@
     "title": "Leather Couch",
     "amount": "1300",
     "createdAt": "2021-12-18T17:30:00.000Z"
+  },
+  {
+    "title": "Bear Skin Rug",
+    "amount": "3200",
+    "createdAt": "2022-01-21T19:00:00.000Z"
+  },  {
+    "title": "Bathroom Remodel",
+    "amount": "6000",
+    "createdAt": "2022-02-03T10:30:00.000Z"
+  },  {
+    "title": "Backyard Fence",
+    "amount": "3900",
+    "createdAt": "2022-04-23T13:45:00.000Z"
+  },  {
+    "title": "F150 repairs",
+    "amount": "4500",
+    "createdAt": "2022-06-19T17:30:00.000Z"
+  },  {
+    "title": "F150 lift",
+    "amount": "1500",
+    "createdAt": "2022-07-21T19:30:00.000Z"
   }
 ]
