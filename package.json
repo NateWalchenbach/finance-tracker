@@ -9,9 +9,12 @@
     "build": "cd client && npm run build"
   },
   "keywords": [],
-  "author": "Sawyer Silfies, Nate Walchenbach, Kurtis Doute, Charlie Mason",
+  "authors": "Sawyer Silfies, Nate Walchenbach, Kurtis Doute, Charlie Mason",
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
   }
 }

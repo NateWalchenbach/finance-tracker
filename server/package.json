@@ -1,24 +1,23 @@
 {
-    "name": "BackPocket - Private Expense Portfolio",
-    "version": "1.0.1",
-    "description": "",
-    "main": "server/server.js",
-    "scripts": {
-        "start": "node server.js",
-        "watch": "nodemon",
-        "seed": "node seeders/seed.js"
-    },
-    "keywords": [],
-    "author": "Sawyer Silfies, Nate Walchenbach, Kurtis Doute, Charlie Mason",
-    "license": "MIT",
-    "dependencies": {
-        "apollo-server-express": "^3.6.2",
-        "express": "^4.17.2",
-        "graphql": "^16.3.0",
-        "mongoose": "^6.2.0"
-    },
-    "devDependencies": {
-        "nodemon": "^2.0.3"
-    }
+  "name": "BackPocket - Private Expense Portfolio",
+  "version": "1.0.1",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon",
+    "seed": "node seeders/seed.js"
+  },
+  "keywords": [],
+  "authors": "Sawyer Silfies, Nate Walchenbach, Kurtis Doute, Charlie Mason",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-express": "^3.6.2",
+    "express": "^4.17.2",
+    "graphql": "^16.3.0",
+    "mongoose": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   }
-  
+}
