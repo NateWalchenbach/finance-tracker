@@ -2,10 +2,11 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const ExpenseSchema = new Schema({
-  id: Number,
-  title: String,
+  title: { type: String, required: true },
   amount: Number,
   createdAt: Date,
 });
 
-module.exports = ExpenseSchema;
+const Expense = mongoose.model("Expense", ExpenseSchema);
+
+module.exports = Expense;
