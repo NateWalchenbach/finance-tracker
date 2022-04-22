@@ -5,6 +5,9 @@ const resolvers = {
     expenses: async () => {
       return Expense.find().sort({ createdAt: -1 });
     },
+    users: async () => {
+      return User.find().sort({ createdAt: -1 });
+    },
   },
 };
 

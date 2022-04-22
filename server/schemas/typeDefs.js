@@ -13,7 +13,7 @@ const typeDefs = gql`
     _id: ID
     title: String
     amount: Int
-    createdAt: Date
+    date: String
   }
 
   type Query {
