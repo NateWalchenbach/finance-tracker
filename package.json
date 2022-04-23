@@ -19,6 +19,8 @@
     "dotenv": "^16.0.0",
     "graphql-iso-date": "^3.6.1",
     "graphql-scalars": "^1.17.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
     "react-bootstrap": "^2.3.0",
     "react-modal": "^3.14.4"
   }

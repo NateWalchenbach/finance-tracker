@@ -4,23 +4,17 @@ import { useMutation } from "@apollo/client";
 import { LOGIN_USER } from "../utils/mutations";
 
 import Auth from "../utils/auth";
+import useInputChange from "../hooks/userInputChange";
 
 const Login = (props) => {
-  const [formState, setFormState] = useState({ email: "", password: "" });
+  const [formState, setFormState] = useState({ email: '', password: '' });
+  const { email, password } = formState;
   const [login, { error, data }] = useMutation(LOGIN_USER);
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-
-    setFormState({
-      ...formState,
-      [name]: value,
-    });
-  };
+  const handleChange = useInputChange(formState, setFormState)
 
   const handleFormSubmit = async (event) => {
-    event.preventDefault();
-    console.log(formState);
+    event.preventDefault();   
     try {
       const { data } = await login({
         variables: { ...formState },
@@ -30,11 +24,6 @@ const Login = (props) => {
     } catch (e) {
       console.error(e);
     }
-
-    setFormState({
-      email: "",
-      password: "",
-    });
   };
 
   return (
@@ -55,7 +44,7 @@ const Login = (props) => {
                   placeholder="Your email"
                   name="email"
                   type="email"
-                  value={formState.email}
+                  value={email}
                   onChange={handleChange}
                 />
                 <input
@@ -63,7 +52,7 @@ const Login = (props) => {
                   placeholder="******"
                   name="password"
                   type="password"
-                  value={formState.password}
+                  value={password}
                   onChange={handleChange}
                 />
                 <button
