@@ -18,6 +18,7 @@ const typeDefs = gql`
 
   type Query {
     expenses: [Expense]
+    users: [User]
   }
 `;
 
