@@ -124,11 +124,7 @@ class ExpensesPage extends Component {
 
   render() {
     const expenseList = this.state.expenses.map((expense) => {
-      return (
-        <li key={expense._id} className="expenses__list-item">
-          {expense.title}
-        </li>
-      );
+      return;
     });
 
     return (
@@ -166,7 +162,6 @@ class ExpensesPage extends Component {
             </button>
           </div>
         )}
-        <ul className="expenses__list">{expenseList}</ul>
       </React.Fragment>
     );
   }
