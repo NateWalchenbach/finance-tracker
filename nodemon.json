@@ -1,0 +1,7 @@
+{
+  "env": {
+    "MONGO_USERNAME": "testUser",
+    "MONGO_PASSWORD": "VSzGqXnVb2Js47aX",
+    "MONGO_DB": "expenses-react-dev"
+  }
+}

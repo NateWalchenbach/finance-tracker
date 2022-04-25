@@ -1,29 +1,17 @@
-# BackPocket
+# GraphQL + React Event Booking API
+This code belongs to a tutorial series: [https://github.com/academind/yt-graphql-react-event-booking-api.git](https://github.com/academind/yt-graphql-react-event-booking-api.git)
 
+Learn how to build a GraphQL API (with Node.js) and a React.js frontend from scratch in this series.
 
-Repo Link: https://github.com/NateWalchenbach/finance-tracker
+# Usage
+Choose the right branch in this repository to get the code for the different parts of the series.
 
-Live Url: 
+Install all dependencies
+```sh
+npm install
+```
 
-
-Goal/Motivation:
-
-When the user logs onto BackPocket, their goal is to log, store, and track expenses in their life in hopes of finding financial peace.
-
-We all live busy lives. We all as a society are long past the days of keeping crumpled receipts to keep track of what we spent over a crazy weekend. We now live in an age of emailed receipts and online banking. With this, like an over flooded email account, it becomes tough to decide what is important for you to track. 
- 
-Where do you spend too much money? What expense displayed and logged could  benefit you by seeing how much and how often you purchase it? These are just some of the goals we have at BackPocket to include in our application. 
-
-
-Problems Solved:
-
-
-
-The Standouts:
-
-
-
-Challenges Faced:
-
-
-
+Run the server
+```sh
+npm start
+```
