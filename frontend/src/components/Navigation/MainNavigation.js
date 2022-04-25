@@ -16,7 +16,7 @@ const mainNavigation = (props) => (
             <ul>
               {!context.token && (
                 <li>
-                  <NavLink to="/auth">Authenticate</NavLink>
+                  <NavLink to="/auth">LogIn</NavLink>
                 </li>
               )}
               <li>

@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Modal from "../components/Modal/Modal";
 import Backdrop from "../components/Backdrop/Backdrop";
 import AuthContext from "../context/auth-context";
+import ExpenseList from "../components/Expenses/ExpenseList/ExpenseList";
 import "./Expenses.css";
 
 class ExpensesPage extends Component {
@@ -49,10 +50,6 @@ class ExpensesPage extends Component {
               title
               date
               price
-              creator {
-                _id
-                email
-              }
             }
           }
         `,
@@ -123,10 +120,6 @@ class ExpensesPage extends Component {
   }
 
   render() {
-    const expenseList = this.state.expenses.map((expense) => {
-      return;
-    });
-
     return (
       <React.Fragment>
         {this.state.creating && <Backdrop />}
@@ -162,6 +155,7 @@ class ExpensesPage extends Component {
             </button>
           </div>
         )}
+        <ExpenseList expenses={this.state.expenses} />
       </React.Fragment>
     );
   }
