@@ -95,11 +95,6 @@ class ExpensesPage extends Component {
               title
               date
               price
-              creator {
-                _id
-                email
-
-              }
             }
           }
         `,
