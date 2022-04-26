@@ -9,6 +9,8 @@ const expenseList = (props) => {
         key={expense._id}
         expenseId={expense._id}
         title={expense.title}
+        price={expense.price}
+        date={expense.date}
       />
     );
   });
