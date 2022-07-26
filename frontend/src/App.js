@@ -43,6 +43,7 @@ class App extends Component {
             }}
           >
             <MainNavigation />
+            .test('should first', () => {second})
             <main className="main-content">
               <Routes>
                 {this.state.token && (
